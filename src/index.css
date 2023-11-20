@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: rgb(40, 40, 40);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.loginSlide {
+  animation: loginSlide 1s;
+}
+
+@keyframes loginSlide {
+  0% {
+    transform: translateX(-300%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes joinSlide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(200%);
+  }
+}
+
+.join-room-moved {
+  animation: joinSlide 1s;
+}
